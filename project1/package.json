@@ -1,0 +1,23 @@
+{
+  "name": "webpack_bootstrap",
+  "version": "1.0.0",
+  "description": "webpack+bootstrap+less+babel6",
+  "main": "index.js",
+  "scripts": {
+    "dev":"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.3.26",
+    "babel-loader": "^6.2.0",
+    "babel-plugin-transform-object-assign": "^6.3.13",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-stage-0": "^6.3.13",
+    "less": "^2.5.3",
+    "less-loader": "^2.2.2",
+    "webpack": "^1.12.9",
+    "webpack-dev-server": "^1.14.0"
+  }
+}
