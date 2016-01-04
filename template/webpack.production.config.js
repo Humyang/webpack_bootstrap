@@ -7,8 +7,6 @@ var Clean = require('clean-webpack-plugin');
 module.exports = {
     context: path.resolve(__dirname, "src"),
     entry: {
-        hot: 'webpack/hot/dev-server',
-        server: 'webpack-dev-server/client?http://localhost:8080',
         index: './js/index.js',
         about: './js/about.js'
     },
@@ -28,7 +26,7 @@ module.exports = {
         }]
     },
     plugins: [
-        new Clean(['build']),
+        new Clean(['dist']),
         new webpack.optimize.CommonsChunkPlugin('commons', 'js/commons.js',["index","about"]),
         new ExtractTextPlugin("css/[name].css"),
         new CopyWebpackPlugin([{
