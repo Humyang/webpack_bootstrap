@@ -1,2 +1,3 @@
-
+template/build/
+template/dist/
 node_modules/
